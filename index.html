@@ -2,35 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Todo app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
+  <header class="background"></header>
+    <main class="main">
+      <header class="main-header">
+        <h1 class="main-title"> TODO</h1>
+        <input type="checkbox" id="switch-check" class="main-switch">
+         <label 
+         for="switch-check"
+         id="switch"
+         class="main-switch-label">
+        </label>
+      </header>
+<form id="form" class="todo">
+<div class="todo-box">
+<div class="todo-cercle"></div>
+<label for="text-todo" class="todo-placeholder"> Create a new todo...</label>
+<input type="text" id="text-todo" class="todo-input">
+</div>
+</form>
+<ul class="list" id="list">
+  <li class="list-item">
+<p class="list-text" >0 items left</p>
+<p class="list-text" id="clear button" role="button"> clear completed</p>
+  </li>
+</ul>
 
-  Todo
-
-  <!-- Add dynamic number --> items left
-
-  All
-  Active 
-  Completed
-
-  Clear Completed
-
-  Drag and drop to reorder list
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Hirwa Celine </a>.
-  </div>
+<div class="options" id="options">
+  <button type="button" value="all" class="options-button options-button--active ">
+all 
+  </button>
+  <button type="button" value="active" class="options-button">
+active   
+  </button>
+  <button type="button" value="completed" class="options-button">
+completed  
+     </button>
+</div>
+<p class="main-text">Drag and drop to reorder text</p>
+</main>
 </body>
 </html>
